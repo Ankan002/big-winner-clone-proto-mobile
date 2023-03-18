@@ -3,7 +3,7 @@ import { colors } from "constants/colors";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { StyleSheet, SafeAreaView, Platform, StatusBar } from "react-native";
 
-export default function TabOneScreen() {
+export default function Home() {
     return (
         <SafeAreaView style={styles.container}>
             <MainHeader title="Home" />
