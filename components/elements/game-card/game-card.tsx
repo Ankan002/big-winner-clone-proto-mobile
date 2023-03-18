@@ -1,3 +1,4 @@
+import { useRouter } from "expo-router";
 import { Text, Pressable, Image } from "react-native";
 import { styles } from "./styles";
 
@@ -9,9 +10,14 @@ interface Props {
 
 const GameCard = (props: Props) => {
     const { gameName } = props;
+    const router = useRouter();
+
+    const onCardClick = () => {
+        router.push("games/spin-wheel");
+    }
 
     return (
-        <Pressable style={styles.Card}>
+        <Pressable style={styles.Card} onPress={onCardClick}>
             <Image source={SpinWheelGameLogo} style={styles.SpinWheelGameLogo} />
             <Text style={styles.CardText}>{gameName}</Text>
         </Pressable>
