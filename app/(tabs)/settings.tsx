@@ -1,12 +1,12 @@
+import { SafeAreaView, StyleSheet, StatusBar, Platform } from "react-native";
 import { MainHeader } from "components/elements";
 import { colors } from "constants/colors";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
-import { StyleSheet, SafeAreaView, Platform, StatusBar } from "react-native";
 
-export default function TabOneScreen() {
+export default function SettingsScreen() {
     return (
         <SafeAreaView style={styles.container}>
-            <MainHeader title="Home" />
+            <MainHeader title="Settings" />
             <ExpoStatusBar style="dark" />
         </SafeAreaView>
     );
@@ -17,5 +17,9 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: colors.primaryLight,
         paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-    }
+    },
+    title: {
+        fontSize: 20,
+        fontWeight: "bold",
+    },
 });

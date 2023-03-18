@@ -9,7 +9,8 @@ module.exports = function (api) {
         {
           alias: {
             constants: "./constants",
-            themes: "./themes"
+            themes: "./themes",
+            components: "./components"
           }
         }
       ]

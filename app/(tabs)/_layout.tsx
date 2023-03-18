@@ -19,7 +19,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="settings"
         options={{
           title: "Settings",
           tabBarIcon: ({ color }) => <MaterialIcons name="settings" size={30} color={color} />,
