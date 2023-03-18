@@ -1,12 +1,12 @@
 import { SafeAreaView, StyleSheet, StatusBar, Platform } from "react-native";
-import { MainHeader } from "components/elements";
+import { GameScreenHeader } from "components/elements";
 import { colors } from "constants/colors";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 
 export default function SpinWheelScreen() {
     return (
         <SafeAreaView style={styles.container}>
-            <MainHeader title="Spin Wheel" />
+            <GameScreenHeader gameTitle="Wheel Of Fortune" />
             <ExpoStatusBar style="dark" />
         </SafeAreaView>
     );
